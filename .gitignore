@@ -1,7 +1,0 @@
-# Compiled Windows executables
-*.exe
-
-# Common C++ build artifacts
-*.obj
-*.o
-*.pdb
