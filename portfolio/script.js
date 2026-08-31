@@ -12,7 +12,7 @@ const portfolioData = {
   ],
   achievements: [['20+', 'LeetCode problems solved'], ['5-star', 'HackerRank rating in Java']],
   certifications: ['Java Certification', 'Leadership Certification'],
-  courses: [], // Add courses here, for example: 'Introduction to Game Development'
+  courses: ['Introduction to Game Development'], // Add courses here, for example: 'Introduction to Game Development'
 };
 
 const fill = (selector, markup) => document.querySelector(selector).innerHTML = markup;
@@ -20,7 +20,7 @@ fill('#skills-grid', portfolioData.skills.map(([name, items]) => `<article class
 fill('#project-list', portfolioData.projects.map(([num, type, name, description, symbol]) => `<article class="project-card reveal"><div class="project-num">${num}</div><div><p class="project-type">${type}</p><h3>${name}</h3><p>${description}</p></div><div class="project-symbol">${symbol}</div></article>`).join(''));
 fill('#achievement-grid', portfolioData.achievements.map(([number, label]) => `<article class="achievement-card reveal"><strong>${number}</strong><p>${label}</p></article>`).join(''));
 fill('#certification-list', portfolioData.certifications.map(item => `<div>${item}</div>`).join(''));
-fill('#course-list', portfolioData.courses.length ? portfolioData.courses.map(item => `<div>${item}</div>`).join('') : '<div>No courses added yet — update <code>portfolioData.courses</code> in script.js.</div>');
+fill('#course-list', portfolioData.courses.length ? portfolioData.courses.map(item => `<div class="course-item">${item}</div>`).join('') : '<div>No courses added yet — update <code>portfolioData.courses</code> in script.js.</div>');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#nav');
 menuButton.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuButton.setAttribute('aria-expanded', open); menuButton.textContent = open ? '×' : '☰'; });
