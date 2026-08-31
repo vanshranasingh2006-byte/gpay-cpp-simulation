@@ -1,129 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio of Your Name, a C++ developer and problem solver." />
-    <title>Your Name | C++ Developer</title>
+    <meta name="description" content="Vansh — B.Tech CSE (AI/ML) student and aspiring game developer." />
+    <title>Vansh | Aspiring Game Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>.profile-photo{overflow:hidden}.profile-photo img{display:none;width:100%;height:100%;object-fit:cover}.profile-photo.has-image{border-style:solid}.profile-photo.has-image img{display:block}.profile-photo.has-image .photo-placeholder{display:none}</style>
   </head>
   <body>
-    <div class="noise"></div>
     <header class="site-header">
-      <a class="logo" href="#home" aria-label="Homepage">YN<span>.</span></a>
+      <a class="logo" href="#home" aria-label="Vansh home">V<span>.</span></a>
       <nav id="nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
       </nav>
       <div class="header-actions">
-        <button class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">◐</button>
+        <a class="nav-cv" href="assets/vansh-cv.pdf" target="_blank" rel="noopener">View CV ↗</a>
+        <button class="theme-toggle" aria-label="Switch color theme" title="Switch color theme">◐</button>
         <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </header>
-
     <main>
-      <section class="hero" id="home">
+      <section class="hero section-width" id="home">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Available for opportunities</p>
-          <h1>Building ideas<br />with <em>logic</em> &amp; care.</h1>
-          <p class="intro">I’m <strong>Your Name</strong>, a C++ developer who enjoys turning everyday problems into clear, practical software.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
-            <a class="text-link" href="#contact">Let’s connect <span>→</span></a>
-          </div>
+          <p class="eyebrow"><span></span> B.Tech CSE (AI/ML) student</p>
+          <h1>Hi, I’m<br /><em>Vansh.</em></h1>
+          <p class="hero-title">Aspiring Game Developer</p>
+          <p class="intro">I’m learning how code, algorithms, and creativity can come together to make thoughtful interactive experiences.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#about">About me <span>↓</span></a><a class="button button-plain" href="assets/vansh-cv.pdf" target="_blank" rel="noopener">View CV <span>↗</span></a></div>
         </div>
-        <div class="hero-art reveal">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="terminal-card">
-            <div class="terminal-top"><i></i><i></i><i></i><span>developer.cpp</span></div>
-            <pre><code><b>class</b> Developer {
-  <b>public</b>:
-    string name = <em>"Your Name"</em>;
-    vector&lt;string&gt; loves = {
-      <em>"C++"</em>, <em>"problem solving"</em>,
-      <em>"building useful things"</em>
-    };
-};</code></pre>
-            <div class="cursor"></div>
-          </div>
-          <p class="art-label">// currently learning &amp; building</p>
+        <div class="profile-wrap reveal">
+          <!-- Replace assets/profile-photo.jpg with your own image to show it here. -->
+          <div class="profile-photo" aria-label="Profile photo area"><img id="profile-image" alt="Portrait of Vansh" /><div class="photo-placeholder"><div class="photo-icon">+</div><p>Add Profile<br />Photo</p><small>assets/profile-photo.jpg</small></div></div>
+          <div class="profile-orbit"></div><p class="location">LPU, Phagwara · Punjab, India</p>
         </div>
-        <a class="scroll-cue" href="#about">Scroll to discover <span>↓</span></a>
       </section>
-
-      <section class="about section" id="about">
+      <section class="about section section-width" id="about">
         <p class="section-label">01 / About me</p>
-        <div class="about-grid">
-          <h2 class="reveal">A curious mind<br />behind the <em>code.</em></h2>
-          <div class="about-text reveal">
-            <p>I’m a student developer with an interest in object-oriented programming and clean problem-solving. I enjoy understanding how systems work, then creating simple experiences around them.</p>
-            <p>Whether it’s handling a digital payment flow or modelling an online store, I care about the small details that make software reliable.</p>
-            <a class="text-link" href="#contact">More about me <span>→</span></a>
-          </div>
-        </div>
-        <div class="stats reveal">
-          <div><strong>02</strong><span>featured projects</span></div>
-          <div><strong>C++</strong><span>primary language</span></div>
-          <div><strong>OOP</strong><span>core foundation</span></div>
-        </div>
+        <div class="about-grid"><h2 class="reveal">Curious about<br />how things <em>work.</em></h2><div class="about-copy reveal"><p>I enjoy programming because it lets me understand computers more deeply. AI and machine learning interest me for the same reason: I like exploring algorithms and seeing how computers process information.</p><p>Game development is where that curiosity feels most personal. I enjoy seeing characters respond to commands and watching code shape movement and behaviour. I’m currently learning Godot and C#, with Unity next on my path.</p><a class="text-link" href="#contact">Let’s connect <span>→</span></a></div></div>
+        <div class="education-card reveal"><p class="card-kicker">Education</p><div><h3>B.Tech CSE — AI &amp; ML</h3><p>Lovely Professional University (LPU)</p></div><div class="education-meta"><span>2nd Year · 3rd Semester</span><span>Expected 2029</span></div></div>
       </section>
-
-      <section class="projects section" id="projects">
-        <p class="section-label">02 / Selected work</p>
-        <div class="section-heading reveal"><h2>Things I’ve<br /><em>built.</em></h2><p>A selection of console applications that explore real-world software workflows.</p></div>
-        <div class="project-list">
-          <article class="project-card reveal">
-            <div class="project-number">01</div>
-            <div class="project-main">
-              <p class="project-type">C++ Console Application</p>
-              <h3>GPay Simulation</h3>
-              <p>A digital-payment simulation with account creation, UPI-based lookup, PIN authentication, balance checks, and secure money transfers.</p>
-              <div class="tags"><span>Classes</span><span>Encapsulation</span><span>Authentication</span></div>
-            </div>
-            <div class="project-mark">₹</div>
-          </article>
-          <article class="project-card project-card-alt reveal">
-            <div class="project-number">02</div>
-            <div class="project-main">
-              <p class="project-type">C++ Console Application</p>
-              <h3>E-commerce System</h3>
-              <p>An object-oriented shopping workflow featuring products, categories, order status, inventory details, and multiple payment options.</p>
-              <div class="tags"><span>Enums</span><span>OOP</span><span>Data modelling</span></div>
-            </div>
-            <div class="project-mark">⌘</div>
-          </article>
-        </div>
-      </section>
-
-      <section class="skills section" id="skills">
-        <p class="section-label">03 / Toolkit</p>
-        <div class="skills-grid">
-          <h2 class="reveal">Skills that turn<br />concepts into <em>code.</em></h2>
-          <div class="skill-columns reveal">
-            <div><p>Languages</p><ul><li>C++</li><li>SQL <span>learning</span></li><li>HTML / CSS</li></ul></div>
-            <div><p>Concepts</p><ul><li>Object-Oriented Programming</li><li>Data Structures</li><li>Problem Solving</li></ul></div>
-            <div><p>Tools</p><ul><li>Git &amp; GitHub</li><li>VS Code</li><li>Console Applications</li></ul></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact section" id="contact">
-        <p class="section-label">04 / Get in touch</p>
-        <div class="contact-box reveal">
-          <p class="eyebrow"><span></span> Have an idea?</p>
-          <h2>Let’s make it<br /><em>happen.</em></h2>
-          <p>Feel free to reach out for a conversation, collaboration, or opportunity.</p>
-          <a class="button button-light" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a>
-        </div>
-      </section>
+      <section class="skills section" id="skills"><div class="section-width"><p class="section-label">02 / Skills</p><div class="section-heading reveal"><h2>What I’m<br /><em>learning.</em></h2><p>A focused toolkit for building, experimenting, and growing as a developer.</p></div><div class="skills-grid" id="skills-grid"></div></div></section>
+      <section class="projects section section-width" id="projects"><p class="section-label">03 / Projects</p><div class="section-heading reveal"><h2>Small projects,<br /><em>real learning.</em></h2><p>Educational simulations built to put programming fundamentals into practice.</p></div><div class="project-list" id="project-list"></div></section>
+      <section class="achievements section" id="achievements"><div class="section-width"><p class="section-label">04 / Achievements</p><div class="achievement-grid" id="achievement-grid"></div></div></section>
+      <section class="certifications section section-width" id="certifications"><p class="section-label">05 / Certifications &amp; courses</p><div class="section-heading reveal"><h2>Always<br /><em>learning.</em></h2><p>These lists are deliberately easy to update in <code>script.js</code> as I complete more learning milestones.</p></div><div class="learning-grid"><div><p class="card-kicker">Certifications</p><div class="simple-list" id="certification-list"></div></div><div><p class="card-kicker">Courses</p><div class="simple-list empty-list" id="course-list"></div></div></div></section>
+      <section class="contact section section-width" id="contact"><div class="contact-card reveal"><p class="eyebrow"><span></span> Get in touch</p><h2>Let’s build<br />something <em>thoughtful.</em></h2><p>I’m always happy to connect with fellow learners, developers, and people who enjoy talking about games and technology.</p><div class="contact-actions"><a class="button button-light" href="mailto:vanshranasingh2006@gmail.com">Email me <span>↗</span></a><a class="social-link" href="https://github.com/vanshranasingh2006-byte" target="_blank" rel="noopener">GitHub ↗</a><a class="social-link" href="https://www.linkedin.com/in/vanshrana3100/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></section>
     </main>
-
-    <footer><a class="logo" href="#home">YN<span>.</span></a><p>Designed &amp; built by Your Name · <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></footer>
+    <footer class="section-width"><a class="logo" href="#home">V<span>.</span></a><p>Made by Vansh · <span id="year"></span></p><a href="#home">Back to top ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
